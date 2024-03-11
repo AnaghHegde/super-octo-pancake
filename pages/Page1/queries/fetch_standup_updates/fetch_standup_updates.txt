@@ -1,0 +1,1 @@
+Select avatar, name, notes from standup_updates order by id desc

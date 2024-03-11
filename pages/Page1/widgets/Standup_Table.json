@@ -1,0 +1,132 @@
+{
+    "boxShadow": "none",
+    "widgetName": "Standup_Table",
+    "columnOrder": [
+        "avatar",
+        "name",
+        "notes"
+    ],
+    "isVisibleDownload": true,
+    "dynamicPropertyPathList": [],
+    "columns": 64,
+    "topRow": 8,
+    "bottomRow": 68,
+    "parentRowSpace": 40,
+    "isSortable": true,
+    "type": "TABLE_WIDGET",
+    "columnTypeMap": {"avatar": {
+        "format": "",
+        "type": "image"
+    }},
+    "parentColumnSpace": 1,
+    "dynamicTriggerPathList": [],
+    "dynamicBindingPathList": [
+        {"key": "tableData"},
+        {"key": "primaryColumns.avatar.computedValue"},
+        {"key": "primaryColumns.name.computedValue"},
+        {"key": "primaryColumns.notes.computedValue"},
+        {"key": "accentColor"}
+    ],
+    "leftColumn": 0,
+    "primaryColumns": {
+        "notes": {
+            "isCellVisible": true,
+            "boxShadow": "none",
+            "isDerived": false,
+            "computedValue": "{{Standup_Table.sanitizedTableData.map((currentRow) => ( currentRow.notes))}}",
+            "textSize": "0.875rem",
+            "index": 2,
+            "isVisible": true,
+            "label": "notes",
+            "columnType": "text",
+            "horizontalAlignment": "LEFT",
+            "borderRadius": "0px",
+            "width": 150,
+            "enableFilter": true,
+            "enableSort": true,
+            "id": "notes",
+            "verticalAlignment": "CENTER"
+        },
+        "name": {
+            "isCellVisible": true,
+            "boxShadow": "none",
+            "isDerived": false,
+            "computedValue": "{{Standup_Table.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
+            "textSize": "0.875rem",
+            "index": 1,
+            "isVisible": true,
+            "label": "name",
+            "columnType": "text",
+            "horizontalAlignment": "LEFT",
+            "borderRadius": "0px",
+            "width": 150,
+            "enableFilter": true,
+            "enableSort": true,
+            "id": "name",
+            "verticalAlignment": "CENTER"
+        },
+        "avatar": {
+            "isCellVisible": true,
+            "boxShadow": "none",
+            "isDerived": false,
+            "computedValue": "{{Standup_Table.sanitizedTableData.map((currentRow) => ( currentRow.avatar))}}",
+            "textSize": "0.875rem",
+            "index": 0,
+            "isVisible": true,
+            "label": "avatar",
+            "columnType": "image",
+            "horizontalAlignment": "LEFT",
+            "borderRadius": "0px",
+            "width": 150,
+            "enableFilter": true,
+            "enableSort": true,
+            "id": "avatar",
+            "outputFormat": "",
+            "verticalAlignment": "CENTER"
+        }
+    },
+    "delimiter": ",",
+    "migrated": true,
+    "derivedColumns": {},
+    "labelTextSize": "0.875rem",
+    "rightColumn": 64,
+    "textSize": "0.875rem",
+    "widgetId": "vsvjnyiby9",
+    "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+    "isVisibleFilters": true,
+    "tableData": "{{fetch_standup_updates.data}}",
+    "isVisible": true,
+    "label": "Data",
+    "searchKey": "",
+    "rows": 60,
+    "version": 3,
+    "parentId": "0",
+    "isLoading": false,
+    "isVisibleCompactMode": true,
+    "horizontalAlignment": "LEFT",
+    "isVisibleSearch": true,
+    "childStylesheet": {
+        "button": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+        },
+        "iconButton": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+        },
+        "menuButton": {
+            "boxShadow": "none",
+            "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+            "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+        }
+    },
+    "borderRadius": "0px",
+    "isVisiblePagination": true,
+    "verticalAlignment": "CENTER",
+    "columnSizeMap": {
+        "name": 30,
+        "avatar": 20
+    }
+}
